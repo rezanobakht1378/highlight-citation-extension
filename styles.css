@@ -1,0 +1,36 @@
+#highlight-button {
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    background-color: var(--bs-primary); /* Bootstrap primary color */
+    color: var(--bs-white); /* Bootstrap white color */
+    border: none;
+    border-radius: var(--bs-border-radius); /* Bootstrap border radius */
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+    box-shadow: var(--bs-box-shadow); /* Bootstrap box shadow */
+    font-family: 'Vazirmatn', sans-serif;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+#highlight-button:hover,
+#highlight-button:focus {
+    background-color: var(--bs-primary-hover); /* Bootstrap primary hover color */
+    box-shadow: var(--bs-box-shadow-lg); /* Larger Bootstrap box shadow */
+    outline: none;
+}
+
+#highlight-button:focus-visible {
+    outline: 2px solid var(--bs-primary); /* Visible outline for accessibility */
+    outline-offset: 2px;
+}
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 576px) {
+    #highlight-button {
+        padding: 0.4rem 0.6rem; /* Adjust padding for smaller screens */
+        font-size: 0.875rem; /* Slightly smaller font size */
+    }
+}
+
+/* Additional styles if needed */

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Highlights</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body class="container py-3" style="width: 570px !important;">
+  <h2 class="mb-4">Saved Highlights</h2>
+  <ul id="highlight-list" class="list-group mb-3" style="max-height: 400px; overflow-y: auto;"></ul>
+  <p id="no-highlights" class="text-muted fst-italic" style="display: none;">No highlights available.</p>
+  <button id="download" class="btn btn-primary me-2">
+    <i class="bi bi-file-earmark-arrow-down"></i> Download JSON
+  </button>
+  <button id="download-word" class="btn btn-secondary">
+    <i class="bi bi-file-earmark-word"></i> Download WORD
+  </button>
+  <script src="popup.js"></script>
+</body>
+</html>
